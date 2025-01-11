@@ -130,6 +130,8 @@ if(modesel.Value == 2)
 	modesel.Value := 1
 else
 	modesel.Value := 2
+ToolTip("Mode: " . modesel.Text)
+SetTimer () => ToolTip(), -500
 }
 toggleactive(*){
 Global Toggle
